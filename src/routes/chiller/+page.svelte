@@ -8,15 +8,10 @@
 
 <svelte:window bind:innerWidth/>
 <template lang="pug">
-  .chiller-container.px-24
-    div.w-full.mt-8
-    +if("innerWidth > 1024")
-      img(src="{chillerNav}" alt="chiller" style="opacity: 0.8")
-      +elseif("innerWidth > 768")
-        img(src="{chillerNavMd}" alt="chiller" style="opacity: 0.8")
-        +else
-          img(src="{chillerNavSm}" alt="chiller" style="opacity: 0.8")
-    +if("innerWidth > 1024")
+  +if("innerWidth > 1024")
+    .chiller-container.px-24
+      div.w-full.mt-8
+        img(src="{chillerNav}" alt="chiller" style="opacity: 0.8")
       div.grid.grid-cols-2.mt-8
         div
           p.text-xl Client:
@@ -35,7 +30,13 @@
           p.mt-4 - Reliable & precision of temperature control & solutions
           p.mt-4 - 20+ years experience, design ability with high integration of controllers base on customized
           p.mt-4 - Especial heat exchange design& technology to achieve electrify saving, in order to meet global Environmental
-      +else
+    +else
+      .chiller-container.px-12
+        div.w-full.mt-8
+        +if("innerWidth > 768")
+          img(src="{chillerNavMd}" alt="chiller" style="opacity: 0.8")
+          +else
+            img(src="{chillerNavSm}" alt="chiller" style="opacity: 0.8")
         div
           p.text-xl.mt-8 Client:
           div.mt-4
