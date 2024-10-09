@@ -42,7 +42,7 @@
           hr
           a.text-3xl.my-2.ml-4(href="/products" on:click!="{() => clickDrawer()}") Products
           hr
-          a.text-3xl.my-2.ml-4(href="contact" on:click!="{() => clickDrawer()}") Contact
+          a.text-3xl.my-2.ml-4(href="/contact" on:click!="{() => clickDrawer()}") Contact
     div.w-full.mt-4.flex
       div.flex-1.h-20.p-1
         div.flex.h-full
