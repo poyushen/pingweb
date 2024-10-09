@@ -1,6 +1,6 @@
 <script lang="ts">
-  import productImg from "../../lib/images/chiller.png"
-  import productImg1 from "../../lib/images/filter.png"
+  import productImg from "../../lib/images/machine.png"
+  import productImg1 from "../../lib/images/filters.png"
   import { isDrawerOpen } from "../../lib/ts/store";
 
   $: innerWidth = 0
@@ -12,13 +12,13 @@
     +if("innerWidth > 1024")
       div.grid.content-end.h-full
         div.flex
-          div.products(class="w-1/2")
+          div.products.products-hover(class="w-1/2")
             a(href="/chiller")
               div.h-full.w-full.grid.content-center
                 p.text-center.text-2xl Chiller
                 p.text-center.text-xl Thermal Solution
               img.w-full.border(src="{productImg}")
-          div.products(class="w-1/2")
+          div.products.products-hover(class="w-1/2")
             a(href="/filter")
               div.h-full.w-full.grid.content-center
                 p.text-center.text-2xl Chemical Filter
