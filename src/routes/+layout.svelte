@@ -44,11 +44,12 @@
           hr
           a.text-3xl.my-2.ml-4(href="contact" on:click!="{() => clickDrawer()}") Contact
     div.w-full.mt-4.flex
-      div.flex.h-20.p-1(class="w-full")
-        a(href="/profile")
-          img.h-full(src="{logo}" alt="logo" class="ml-8")
-        a(href="/profile")
-          img.h-full(src="{textlogo}" alt="textlogo")
+      div.flex-1.h-20.p-1
+        div.flex.h-full
+          a(href="/profile")
+            img.h-full(src="{logo}" alt="logo" class="ml-8")
+          a(href="/profile")
+            img.h-full(src="{textlogo}" alt="textlogo")
       +if("innerWidth > 1024")
         div.grid.justify-items-end(class="w-3/4")
           div.flex.flex-row-reverse.text-lg.items-center.mr-24

@@ -17,7 +17,7 @@
           img.h-64(src="{filterNav1}" alt="filter" style="opacity: 0.8" class="w-1/2")
           img.h-64(src="{filterNav2}" alt="filter" style="opacity: 0.8" class="w-1/2")
         +else
-          div.w-full
+          div.w-full.mt-8
             img.w-96.h-48(src="{filterNav1}" alt="filter" style="opacity: 0.8")
             img.w-96.h-48.mt-2(src="{filterNav2}" alt="filter" style="opacity: 0.8")
     +if("innerWidth > 1024")
