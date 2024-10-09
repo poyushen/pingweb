@@ -7,21 +7,19 @@
 
 <svelte:window bind:innerWidth/>
 <template lang="pug">
-  +if("innerWidth > 1024")
-    .chiller-container.px-24
-      div.w-full.mt-8.flex
+  .chiller-container
+    +if("innerWidth > 1024")
+      div.w-full.mt-8.flex.px-24
         img.h-96(src="{filterNav1}" alt="filter" style="opacity: 0.8" class="w-1/2")
         img.h-96(src="{filterNav2}" alt="filter" style="opacity: 0.8" class="w-1/2")
-    +elseif("innerWidth > 768")
-      .chiller-container.px-12
-        div.w-full.mt-8.flex
+      +elseif("innerWidth > 640")
+        div.w-full.mt-8.flex.px-12
           img.h-64(src="{filterNav1}" alt="filter" style="opacity: 0.8" class="w-1/2")
           img.h-64(src="{filterNav2}" alt="filter" style="opacity: 0.8" class="w-1/2")
-      +else
-        .chiller-container.px-8
-          div.w-full.mt-8
-            img.w-96.h-48(src="{filterNav1}" alt="filter" style="opacity: 0.8")
-            img.w-96.h-48.mt-2(src="{filterNav2}" alt="filter" style="opacity: 0.8")
+        +else
+          div.w-full.mt-8.px-8
+            img.w-full.h-auto(src="{filterNav1}" alt="filter" style="opacity: 0.8")
+            img.w-full.h-auto.mt-2(src="{filterNav2}" alt="filter" style="opacity: 0.8")
     +if("innerWidth > 1024")
       div.grid.grid-cols-2.mt-8.px-24
         div
@@ -58,7 +56,7 @@
               p TSMC China/CXMT/NEXCHIP/BOE/Spil/Amkor/
               p Avary Holding/JHIC/Nata/CR Micro/UniMos/
               p Sanan IC/SJ Semi/CanSemi/Yangtze Memory/XMC
-        div.mb-8.mt-8
+        div.px-8.mb-8.mt-8
           p.text-xl Information
           p.mt-4 - ISO 900, FM4920, UL-900, 高新技術證書
           p.mt-4 - 半導體電子級, 空調系統, 醫院, 製藥業, 核能發電廠, 實驗室, 軍方, 生化科技
