@@ -12,9 +12,9 @@
       div.mt-48.grid.grid-cols-2
         div.profile-main.content-center
           p.text-2xl "Total solution is the core principle in Echotrade, which is making never end & bigger partnership in semiconductor. Innovation with new technology creativity , strong & professional supply chain & trusted. it wasn’t a challenge to be taken lightly."
-        img.p-4(src="{semiconductor}")(style="opacity: 0.8")
+        img.p-4(src="{semiconductor}" alt="semicondustor" style="opacity: 0.8")
       +else
-        img.mt-12(class="lg:p-4")(src="{semiconductor}")(style="opacity: 0.8")
+        img.mt-12(class="lg:p-4" src="{semiconductor}" alt="semiconductor" style="opacity: 0.8")
         div.profile-main.content-center
           p.text-2xl.mt-8 "Total solution is the core principle in Echotrade, which is making never end & bigger partnership in semiconductor. Innovation with new technology creativity , strong & professional supply chain & trusted. it wasn’t a challenge to be taken lightly."
     div.profile-sub.mt-16.grid.justify-items-end.w-full
@@ -44,13 +44,6 @@
 
   .textGray {
     color: #7B7B7B;
-    line-height: 30px;
-    font-family: "futura-pt", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .textGray p{
     line-height: 30px;
     font-family: "futura-pt", sans-serif;
     font-weight: 400;

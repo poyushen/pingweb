@@ -46,9 +46,9 @@
     div.w-full.mt-4.flex
       div.flex.h-20.p-1(class="w-full")
         a(href="/profile")
-          img.h-full(src="{logo}")(class="ml-8")
+          img.h-full(src="{logo}" alt="logo")(class="ml-8")
         a(href="/profile")
-          img.h-full(src="{textlogo}")
+          img.h-full(src="{textlogo}" alt="textlogo")
       +if("innerWidth > 1024")
         div.grid.justify-items-end(class="w-3/4")
           div.flex.flex-row-reverse.text-lg.items-center.mr-24
@@ -60,7 +60,7 @@
               a(href="/profile")(class="{currentPage == '/profile' ? 'selected' : 'unselected'}") Profile
         +else
           button.h-12.mr-8.mt-4.visible(on:click!="{() => clickDrawer()}")
-            img.h-12(src="{menu}")
+            img.h-12(src="{menu}" alt="menu")
   div.h-24
   div.content-container
     slot

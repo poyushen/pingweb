@@ -11,11 +11,11 @@
   .chiller-container.px-24
     div.w-full.mt-8
     +if("innerWidth > 1024")
-      img(src="{chillerNav}")(style="opacity: 0.8")
+      img(src="{chillerNav}" alt="chiller" style="opacity: 0.8")
       +elseif("innerWidth > 768")
-        img(src="{chillerNavMd}")(style="opacity: 0.8")
+        img(src="{chillerNavMd}" alt="chiller" style="opacity: 0.8")
         +else
-          img(src="{chillerNavSm}")(style="opacity: 0.8")
+          img(src="{chillerNavSm}" alt="chiller" style="opacity: 0.8")
     +if("innerWidth > 1024")
       div.grid.grid-cols-2.mt-8
         div

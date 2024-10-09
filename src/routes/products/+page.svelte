@@ -17,26 +17,26 @@
               div.h-full.w-full.grid.content-center
                 p.text-center.text-2xl Chiller
                 p.text-center.text-xl Thermal Solution
-              img.w-full.border(src="{productImg}")
+              img.w-full.border(src="{productImg}" alt="product")
           div.products.products-hover(class="w-1/2")
             a(href="/filter")
               div.h-full.w-full.grid.content-center
                 p.text-center.text-2xl Chemical Filter
                 p.text-center.text-xl MAU, FFU, HEPA, ULPA
-            img.w-full.border(src="{productImg1}")
+            img.w-full.border(src="{productImg1}" alt="product")
       +else
         div.products.mx-8.mt-12(class="{$isDrawerOpen == true ? 'products-nohover' : 'products-hover'}")
           a(href="/chiller")
             div.h-full.w-full.grid.content-center
               p.text-center.text-2xl Chiller
               p.text-center.text-xl Thermal Solution
-            img.w-full.border(src="{productImg}")
+            img.w-full.border(src="{productImg}" alt="product")
         div.products.mx-8.mt-12(class="{$isDrawerOpen == true ? 'products-nohover' : 'products-hover'}")
           a(href="/filter")
             div.h-full.w-full.grid.content-center
               p.text-center.text-2xl Chemical Filter
               p.text-center.text-xl MAU, FFU, HEPA, ULPA
-          img.w-full.border(src="{productImg1}")
+          img.w-full.border(src="{productImg1}" alt="product")
 
 </template>
 
