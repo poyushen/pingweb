@@ -38,26 +38,26 @@
       Drawer.mt-24
         div.grid.grid-cols-1
           hr
-          a.text-3xl.my-2.ml-4(href="/profile")(on:click!="{() => clickDrawer()}") Profile
+          a.text-3xl.my-2.ml-4(href="/profile" on:click!="{() => clickDrawer()}") Profile
           hr
-          a.text-3xl.my-2.ml-4(href="/products")(on:click!="{() => clickDrawer()}") Products
+          a.text-3xl.my-2.ml-4(href="/products" on:click!="{() => clickDrawer()}") Products
           hr
-          a.text-3xl.my-2.ml-4(href="contact")(on:click!="{() => clickDrawer()}") Contact
+          a.text-3xl.my-2.ml-4(href="contact" on:click!="{() => clickDrawer()}") Contact
     div.w-full.mt-4.flex
       div.flex.h-20.p-1(class="w-full")
         a(href="/profile")
-          img.h-full(src="{logo}" alt="logo")(class="ml-8")
+          img.h-full(src="{logo}" alt="logo" class="ml-8")
         a(href="/profile")
           img.h-full(src="{textlogo}" alt="textlogo")
       +if("innerWidth > 1024")
         div.grid.justify-items-end(class="w-3/4")
           div.flex.flex-row-reverse.text-lg.items-center.mr-24
             button.ml-16.btn(class="invisible lg:visible")
-              a(href="/contact")(class="{currentPage == '/contact' ? 'selected' : 'unselected'}") Contact
+              a(href="/contact" class="{currentPage == '/contact' ? 'selected' : 'unselected'}") Contact
             button.ml-16.btn(class="invisible lg:visible")
-              a(href="/products")(class="{currentPage == '/products' || currentPage == '/filter' || currentPage == '/chiller' ? 'selected' : 'unselected'}") Products
+              a(href="/products" class="{currentPage == '/products' || currentPage == '/filter' || currentPage == '/chiller' ? 'selected' : 'unselected'}") Products
             button.ml-16.btn(class="invisible lg:visible")
-              a(href="/profile")(class="{currentPage == '/profile' ? 'selected' : 'unselected'}") Profile
+              a(href="/profile" class="{currentPage == '/profile' ? 'selected' : 'unselected'}") Profile
         +else
           button.h-12.mr-8.mt-4.visible(on:click!="{() => clickDrawer()}")
             img.h-12(src="{menu}" alt="menu")

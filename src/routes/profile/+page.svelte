@@ -2,7 +2,6 @@
   import semiconductor from "../../lib/images/semiconductor.jpg"
 
   $:outerWidth = 0;
-  $:outerWidth, console.log(outerWidth);
 </script>
 
 <svelte:window bind:outerWidth />

@@ -25,7 +25,7 @@
             img.h-full.p-1(src="{phoneIcon}" alt="phone")
             p.ml-2 +886 972322333
       div.mx-48.mt-12.mb-8(class="h-8/12")
-        iframe.w-full.h-96(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.95978328861!2d120.30820457549315!3d22.617976931305407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049c94bb90a7%3A0xfeb56573d9c9549c!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A5Zub57at5LiJ6LevNTflt7czN-iZnw!5e0!3m2!1szh-TW!2stw!4v1728062840137!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+        iframe.w-full.h-96(title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.95978328861!2d120.30820457549315!3d22.617976931305407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049c94bb90a7%3A0xfeb56573d9c9549c!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A5Zub57at5LiJ6LevNTflt7czN-iZnw!5e0!3m2!1szh-TW!2stw!4v1728062840137!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
     +else
       div.contact-container.mt-8
         div.mx-12.mt-4
@@ -40,7 +40,7 @@
             img.h-full.p-1(src="{phoneIcon}" alt="phone")
             p.ml-2 +886 972322333
         div.mx-12.mt-8
-          iframe.w-full.h-96(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.95978328861!2d120.30820457549315!3d22.617976931305407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049c94bb90a7%3A0xfeb56573d9c9549c!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A5Zub57at5LiJ6LevNTflt7czN-iZnw!5e0!3m2!1szh-TW!2stw!4v1728062840137!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+          iframe.w-full.h-96(title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.95978328861!2d120.30820457549315!3d22.617976931305407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049c94bb90a7%3A0xfeb56573d9c9549c!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A5Zub57at5LiJ6LevNTflt7czN-iZnw!5e0!3m2!1szh-TW!2stw!4v1728062840137!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
 </template>
 
 <style>
